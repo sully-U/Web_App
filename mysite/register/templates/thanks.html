@@ -1,0 +1,32 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="{% static 'register/register.css' %}" />
+    <body>
+      <div class="topnav">
+        <a href="/homepage">Home</a>
+        <a href="/academics">Academics</a>
+        <a href="/student">Student Life</a>
+        <a href="/contact">Contact</a>
+        <a href="/about">About</a>
+        <a id="login" href="/register"> Login </a>
+      </div>
+
+      <title>Thanks</title>
+    </body>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="content" role="main">
+        <h1 class="title">Thank you {{firstname}}, for registering</h1>     
+    </div>
+    <h2 class = "intro"> We are excited to see you on campus soon!</h2>
+    <h3>We hope to see you on campus soon!</h3>
+      </div>
+    </div>
+    <footer class="footer"></footer>
+  </body>
+</html>

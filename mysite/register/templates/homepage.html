@@ -1,0 +1,50 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="{% static 'register/register.css' %}" />
+    <body>
+      <div class="topnav">
+        <a class="active" href="">Home</a>
+        <a href="/academics">Academics</a>
+        <a href="/student">Student Life</a>
+        <a href="/contact">Contact</a>
+        <a href="/about">About</a>
+        <a id="login" href="/register"> Login</a>
+      </div>
+
+      <title>Welcome!</title>
+
+    </body>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="content" role="main">
+        <h1 class="title">Welcome!</h1>
+
+        <img
+          src="https://cdn.glitch.com/a9975ea6-8949-4bab-addb-8a95021dc2da%2Fillustration.svg?v=1618177344016"
+          class="illustration"
+          alt="Editor illustration"
+          title="Click the image!"
+        />
+
+        <div class="intro">
+          <h2>Registering for Classes?</h2>
+          <p>
+            Welcome to <strong>Brigham Young University - Idaho</strong>. If you
+            are a new student you can click the link below to create an account
+            or if you're a returning student, you can login by clicking in the
+            top right.
+          </p>
+          <a href="/register">
+            <button>Enroll</button>
+          </a>
+        </div>
+      </div>
+    </div>
+    <footer class="footer"></footer>
+  </body>
+</html>

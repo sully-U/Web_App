@@ -1,0 +1,65 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="{% static 'register/register.css' %}" />
+    <body>
+      <div class="topnav">
+        <a  href="/homepage">Home</a>
+        <a href="/academics">Academics</a>
+        <a href="/student">Student Life</a>
+        <a href="/contact">Contact</a>
+        <a href="/about">About</a>
+        <a id="login" href="/register"> Login </a>
+      </div>
+
+      <title>Register</title>
+
+    </body>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="content" role="main">
+        <h1 class="title">Let's get to know you!</h1>
+
+        <img
+          src="https://cdn.glitch.com/a9975ea6-8949-4bab-addb-8a95021dc2da%2Fillustration.svg?v=1618177344016"
+          class="illustration"
+          alt="Editor illustration"
+          title="Click the image!"
+        />
+
+        <!-- <form method="POST">
+            <fieldset>
+                {{ form.as_p}}
+            </fieldset>
+            
+            <a id="enroll" href="">
+                <button>Enroll</button>
+            </a>
+        </form> -->
+        <form action= '/admin/' method="POST">
+            {% csrf_token %}
+            <label for="username">Username:</label><br />
+            <input type="text" id="username" name="username" required/><br />
+            <label for="fullname">First Name:</label><br />
+            <input type="text" id="firstname" name="firstname" required/><br />
+            <label for="fullname">Last Name:</label><br />
+            <input type="text" id="lastname" name="lastname" required/><br />
+            <label for="password">Password:</label><br />
+            <input type="password" id="password" name="password" required/><br />
+
+            <a id="enroll" href="/thanks/">
+            <button formaction= '/thanks/' type="Sumbit">Enroll</button>
+          </a>
+          </form>
+
+        </div>
+      </div>
+    </div>
+    <footer class="footer"></footer>
+  </body>
+</html>
+
